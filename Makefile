@@ -45,3 +45,9 @@ packege-install:
 packege-reinstall:
 	pip install --user --force-reinstall dist/*.whl
 # переустановка пакета
+
+# installation:
+#     poetry install
+#     poetry build
+#     poetry publish --dry-run
+#     pip install --user --force-reinstall dist/*.whl
