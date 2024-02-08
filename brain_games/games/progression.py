@@ -12,15 +12,15 @@ def progress():
     print('What number is missing in the progression?')
     round = 0
     while round != MAX_ROUNDS:
-        start = random.randint(1, 3)
-        stop = random.randint(30, 100)
-        step = random.randint(3, 5)
+        start = random.randint(2, 30)
+        step = random.randint(2, 4)
         number = []
-        for i in range(start, stop, step):
-            number.append(str(i))
-        random_index = random.randint(1, 9)
+        for i in range(1, 11):
+            new = start + (i - 1) * step
+            number.append(str(new))
+        random_index = random.randint(0, 9)
         random_value = number[random_index]
-        number[random_index] = '...'
+        number[random_index] = '..'
         result = " ".join(number)
         print(f'Question: {result}')
         your_answer = prompt.string('Your answer: ')
