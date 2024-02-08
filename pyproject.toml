@@ -3,10 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Puzzle brain game."
 authors = ["Malik Nizamov <malik.nizamovv@gmail.com>"]
-repository = 
 readme = "README.md"
 packages = [
-    { include = "brain_games" },
+    { include = "brain_games" },  
 ]
 
 [tool.poetry.dependencies]
