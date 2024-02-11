@@ -1,6 +1,6 @@
 import random
 import prompt
-import math
+
 
 max_round = 3
 
@@ -12,10 +12,11 @@ def prime_number():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     round = 0
     while round != max_round:
-        number = random.randint(2, 100)
+        # number = random.randint(2, 100)
+        number = 22
         print(f'Question: {number}')
         lts = []
-        for char in range(2, int(math.sqrt(number)) + 1):
+        for char in range(2, number + 1):
             if number % char == 0:
                 lts.append(char)
         if len(lts) == 1:
