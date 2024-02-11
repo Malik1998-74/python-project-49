@@ -17,7 +17,7 @@ def parity_check():
             right_answer = 'yes'
         else:
             right_answer = 'no'
-        print(f'Question:{question}')
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == right_answer:
             print('Correct!')
