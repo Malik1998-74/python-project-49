@@ -21,7 +21,7 @@ def result_of_expression():
         if symbol == '+':
             result = number_one + number_two
         elif symbol == '-':
-            result = abs(number_one - number_two)
+            result = number_one - number_two
         else:
             result = number_one * number_two
         if user_answer == result:
@@ -34,3 +34,4 @@ Let's try again, {name}!""")
         rounds += 1
     if rounds == MAX_ROUNDS:
         print(f'Congratulations, {name}!')
+        
