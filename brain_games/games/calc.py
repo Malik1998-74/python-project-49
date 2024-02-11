@@ -34,4 +34,3 @@ Let's try again, {name}!""")
         rounds += 1
     if rounds == MAX_ROUNDS:
         print(f'Congratulations, {name}!')
-        
