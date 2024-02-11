@@ -1,6 +1,6 @@
 import random
 import prompt
-
+import math
 
 max_round = 3
 
@@ -15,7 +15,7 @@ def prime_number():
         number = random.randint(2, 100)
         print(f'Question: {number}')
         lts = []
-        for char in range(2, (number ** 0.5) + 1):
+        for char in range(2, int(math.sqrt(number)) + 1):
             if number % char == 0:
                 lts.append(char)
         if len(lts) == 1:
