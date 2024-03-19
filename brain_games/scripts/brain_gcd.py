@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.gcd import divisor
+from brain_games.games.gcd import play
 
 
 def main():
-    divisor()
+    play()
 
 
 if __name__ == ' __main__ ':
