@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.calc import result_of_expression
+from brain_games.games.calc import play
 
 
 def main():
-    result_of_expression()
+    play()
 
 
 if __name__ == ('__main__'):
