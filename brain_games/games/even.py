@@ -2,8 +2,8 @@ from brain_games.games.general_logging import logging
 from random import randint
 
 
-WELCOME_TEXT_EVEN: str = 'Answer "yes" if the number is even,' \
-    'otherwise answer "no".'
+WELCOME_TEXT_EVEN: str = 'Answer "yes" if the number is even, ' \
+                         'otherwise answer "no".'
 
 
 def even():
