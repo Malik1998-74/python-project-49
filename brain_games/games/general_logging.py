@@ -1,19 +1,20 @@
+from typing import Callable
 import prompt
 
 
-MAX_ROUNDS = 3
+MAX_ROUNDS: int = 3
 
 
-def logging(game, text):
+def logging(game: Callable, text: str) -> None:
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ').capitalize()
+    name: str = prompt.string('May I have your name? ').capitalize()
     print(f'Hello, {name}!')
     print(text)
-    rounds = 0
+    rounds: int = 0
     while rounds != MAX_ROUNDS:
         number, right_answer = game()
         print(f'Question: {number}')
-        user_answer = prompt.string('Your answer: ')
+        user_answer: str = prompt.string('Your answer: ')
         if user_answer == right_answer:
             print('Correct!')
         else:
