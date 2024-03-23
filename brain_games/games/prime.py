@@ -2,8 +2,8 @@ from brain_games.games.general_logging import logging
 import random
 
 
-WELCOME_TEXT_PRIME: str = 'Answer "yes" if given number is prime.' \
-    'Otherwise answer "no".'
+WELCOME_TEXT_PRIME: str = 'Answer "yes" if given number is prime. ' \
+                          'Otherwise answer "no".'
 
 
 def prime():
