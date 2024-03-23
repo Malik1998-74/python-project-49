@@ -2,22 +2,19 @@ from brain_games.games.general_logging import logging
 import random
 
 
-tasks = 'What number is missing in the progression?'
+WELCOME_TEXT_PROGRESSION: str = 'What number is missing in the progression?'
 
 
 def progression():
-    start = random.randint(2, 30)
-    step = random.randint(2, 4)
-    number = []
-    for i in range(1, 11):
-        new = start + (i - 1) * step
-        number.append(str(new))
-    random_index = random.randint(0, 9)
-    random_value = number[random_index]
+    start: int = random.randint(2, 30)
+    step: int = random.randint(2, 4)
+    number: list = [str(start + (i - 1) * step) for i in range(1, 11)]
+    random_index: int = random.randint(0, 9)
+    random_value: str = number[random_index]
     number[random_index] = '..'
-    result = " ".join(number)
+    result: str = " ".join(number)
     return result, random_value
 
 
 def play():
-    logging(game=progression, text=tasks)
+    logging(game=progression, text=WELCOME_TEXT_PROGRESSION)
